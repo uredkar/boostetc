@@ -1,2 +1,2 @@
-# Finance
+# Learning
 Just messing around with code
