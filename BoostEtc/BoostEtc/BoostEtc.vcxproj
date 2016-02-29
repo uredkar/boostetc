@@ -145,13 +145,37 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Account.h" />
+    <ClInclude Include="Buyer.h" />
+    <ClInclude Include="Dealer.h" />
+    <ClInclude Include="MarketMaker.h" />
+    <ClInclude Include="Order.h" />
+    <ClInclude Include="OrderBook.h" />
+    <ClInclude Include="OrderMatchingEngine.h" />
+    <ClInclude Include="Portfolio.h" />
     <ClInclude Include="PPLearnFeatures.h" />
+    <ClInclude Include="Security.h" />
+    <ClInclude Include="Seller.h" />
+    <ClInclude Include="Specialist.h" />
+    <ClInclude Include="Spread.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Account.cpp" />
     <ClCompile Include="BoostEtc.cpp" />
+    <ClCompile Include="Buyer.cpp" />
+    <ClCompile Include="Dealer.cpp" />
+    <ClCompile Include="MarketMaker.cpp" />
+    <ClCompile Include="Order.cpp" />
+    <ClCompile Include="OrderBook.cpp" />
+    <ClCompile Include="OrderMatchingEngine.cpp" />
+    <ClCompile Include="Portfolio.cpp" />
     <ClCompile Include="PPLearnFeatures.cpp" />
+    <ClCompile Include="Security.cpp" />
+    <ClCompile Include="Seller.cpp" />
+    <ClCompile Include="Specialist.cpp" />
+    <ClCompile Include="Spread.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
