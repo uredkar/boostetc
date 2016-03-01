@@ -74,6 +74,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>C:\QuantLib-master\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\QuantLib-master;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -105,6 +107,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>QuantLib-vc140-x64-mt-gd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -147,7 +150,11 @@
   <ItemGroup>
     <ClInclude Include="Account.h" />
     <ClInclude Include="Buyer.h" />
+    <ClInclude Include="ConfigureSimulation.h" />
+    <ClInclude Include="Controller.h" />
     <ClInclude Include="Dealer.h" />
+    <ClInclude Include="Exchange.h" />
+    <ClInclude Include="Market.h" />
     <ClInclude Include="MarketMaker.h" />
     <ClInclude Include="Order.h" />
     <ClInclude Include="OrderBook.h" />
@@ -156,16 +163,22 @@
     <ClInclude Include="PPLearnFeatures.h" />
     <ClInclude Include="Security.h" />
     <ClInclude Include="Seller.h" />
+    <ClInclude Include="Serializer.h" />
     <ClInclude Include="Specialist.h" />
     <ClInclude Include="Spread.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="TransactionTime.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Account.cpp" />
     <ClCompile Include="BoostEtc.cpp" />
     <ClCompile Include="Buyer.cpp" />
+    <ClCompile Include="ConfigureSimulation.cpp" />
+    <ClCompile Include="Controller.cpp" />
     <ClCompile Include="Dealer.cpp" />
+    <ClCompile Include="Exchange.cpp" />
+    <ClCompile Include="Market.cpp" />
     <ClCompile Include="MarketMaker.cpp" />
     <ClCompile Include="Order.cpp" />
     <ClCompile Include="OrderBook.cpp" />
@@ -174,6 +187,7 @@
     <ClCompile Include="PPLearnFeatures.cpp" />
     <ClCompile Include="Security.cpp" />
     <ClCompile Include="Seller.cpp" />
+    <ClCompile Include="Serializer.cpp" />
     <ClCompile Include="Specialist.cpp" />
     <ClCompile Include="Spread.cpp" />
     <ClCompile Include="stdafx.cpp">
@@ -182,6 +196,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="TransactionTime.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

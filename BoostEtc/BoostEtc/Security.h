@@ -6,3 +6,23 @@ public:
 	~Security();
 };
 
+
+class Stock : Security
+{
+
+};
+
+class Bond : Security
+{
+
+};
+
+class Derivative : Security
+{
+
+};
+
+class Swap : Derivative
+{
+
+};
